@@ -8567,6 +8567,23 @@ impl CodeAssembler {
 		<Self as CodeAsmInt1>::int1(self)
 	}
 
+	/// `REX` instruction
+	///
+	/// Instruction | Opcode | CPUID
+	/// ------------|--------|------
+	/// `REX` | `40` | `8086+`
+	///
+	/// # Errors
+	///
+	/// Fails if an operand is invalid (basic checks only)
+	#[inline]
+	pub fn rex(&mut self) -> Result<(), IcedError>
+	where
+		Self: CodeAsmRex,
+	{
+		<Self as CodeAsmRex>::rex(self)
+	}
+
 	/// `INT3` instruction
 	///
 	/// Instruction | Opcode | CPUID

@@ -4944,6 +4944,7 @@ pub(super) static SIZES_NORMAL: [MemorySize; IcedConstants::CODE_ENUM_COUNT] = [
 	MemorySize::Packed128_UInt32,// VEX_Vsm4rnds4_xmm_xmm_xmmm128
 	MemorySize::Packed256_UInt32,// VEX_Vsm4rnds4_ymm_ymm_ymmm256
 	MemorySize::Packed128_UInt32,// VEX_Vsm3rnds2_xmm_xmm_xmmm128_imm8
+	MemorySize::Unknown,// Rex
 ];
 
 #[rustfmt::skip]
@@ -9884,4 +9885,5 @@ pub(super) static SIZES_BCST: [MemorySize; IcedConstants::CODE_ENUM_COUNT] = [
 	MemorySize::Unknown,// VEX_Vsm4rnds4_xmm_xmm_xmmm128
 	MemorySize::Unknown,// VEX_Vsm4rnds4_ymm_ymm_ymmm256
 	MemorySize::Unknown,// VEX_Vsm3rnds2_xmm_xmm_xmmm128_imm8
+	MemorySize::Unknown,// Rex
 ];

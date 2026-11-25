@@ -4943,4 +4943,5 @@ pub(super) static OP_COUNT: [u8; IcedConstants::CODE_ENUM_COUNT] = [
 	3,// VEX_Vsm4rnds4_xmm_xmm_xmmm128
 	3,// VEX_Vsm4rnds4_ymm_ymm_ymmm256
 	4,// VEX_Vsm3rnds2_xmm_xmm_xmmm128_imm8
+	0,// Rex
 ];

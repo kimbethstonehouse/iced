@@ -1990,6 +1990,11 @@ pub trait CodeAsmInt1 {
 }
 
 #[rustfmt::skip]
+pub trait CodeAsmRex {
+	fn rex(&mut self) -> Result<(), IcedError>;
+}
+
+#[rustfmt::skip]
 pub trait CodeAsmInt3 {
 	fn int3(&mut self) -> Result<(), IcedError>;
 }

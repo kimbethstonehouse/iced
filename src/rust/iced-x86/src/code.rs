@@ -39469,9 +39469,17 @@ pub enum Code {
 	///
 	/// `16/32/64-bit`
 	VEX_Vsm3rnds2_xmm_xmm_xmmm128_imm8 = 4935,
+	/// `REX`
+	///
+	/// `40`
+	///
+	/// `8086+`
+	///
+	/// `16/32/64-bit`
+	Rex = 4936,
 }
 #[rustfmt::skip]
-static GEN_DEBUG_CODE: [&str; 4936] = [
+static GEN_DEBUG_CODE: [&str; 4937] = [
 	"INVALID",
 	"DeclareByte",
 	"DeclareWord",
@@ -44408,6 +44416,7 @@ static GEN_DEBUG_CODE: [&str; 4936] = [
 	"VEX_Vsm4rnds4_xmm_xmm_xmmm128",
 	"VEX_Vsm4rnds4_ymm_ymm_ymmm256",
 	"VEX_Vsm3rnds2_xmm_xmm_xmmm128_imm8",
+	"Rex",
 ];
 impl fmt::Debug for Code {
 	#[inline]

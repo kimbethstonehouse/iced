@@ -8569,6 +8569,14 @@ impl CodeAsmInt1 for CodeAssembler {
 }
 
 #[rustfmt::skip]
+impl CodeAsmRex for CodeAssembler {
+	#[inline]
+	fn rex(&mut self) -> Result<(), IcedError> {
+		self.add_instr(Instruction::with(Code::Rex))
+	}
+}
+
+#[rustfmt::skip]
 impl CodeAsmInt3 for CodeAssembler {
 	#[inline]
 	fn int3(&mut self) -> Result<(), IcedError> {

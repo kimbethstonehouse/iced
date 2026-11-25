@@ -34,7 +34,7 @@ impl IcedConstants {
 	pub(crate) const CC_NE_ENUM_COUNT: usize = 2;
 	pub(crate) const CC_NP_ENUM_COUNT: usize = 2;
 	pub(crate) const CC_P_ENUM_COUNT: usize = 2;
-	pub(crate) const CODE_ENUM_COUNT: usize = 4936;
+	pub(crate) const CODE_ENUM_COUNT: usize = 4937;
 	pub(crate) const CODE_SIZE_ENUM_COUNT: usize = 4;
 	pub(crate) const CONDITION_CODE_ENUM_COUNT: usize = 17;
 	pub(crate) const CPUID_FEATURE_ENUM_COUNT: usize = 178;
